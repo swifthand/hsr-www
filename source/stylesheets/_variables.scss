@@ -1,0 +1,76 @@
+/******************************************************************************
+  SECTION: BREAKPOINTS
+******************************************************************************/
+$screen-sm:  568px;
+$screen-md:  768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
+
+$bp-xs: max-width  $screen-sm;
+$bp-sm: $screen-sm $screen-md;
+$bp-md: $screen-md $screen-lg;
+$bp-lg: min-width  $screen-lg;
+$bp-xl: min-width  $screen-xl;
+
+$bp-min-sm: min-width $screen-sm;
+$bp-min-md: min-width $screen-md;
+$bp-min-lg: min-width $screen-lg;
+
+$bp-max-sm: max-width $screen-md;
+$bp-max-md: max-width $screen-lg;
+$bp-max-lg: max-width $screen-xl;
+
+
+/******************************************************************************
+  SECTION: FONT SIZES AND LINE HEIGHTS
+******************************************************************************/
+$rem-base:    10px;
+$rem-xs:      7.888888888px;
+$rem-sm:      7.888888888px;
+$rem-md:      8.888888888px;
+$rem-lg:      8.888888888px;
+$rem-xl:      10px;
+
+$lineh-base:  1.5;
+
+
+/******************************************************************************
+  SECTION: EXPLICIT COLORS
+******************************************************************************/
+
+// Colors derived from Light version by searching for colors with the following
+// deltas in their HSV's value and searching for saturations that didn't suck.
+//   near-white:  +12 val
+//   light:        +0 val
+//   medium:      -24 val
+//   dark:        -52 val
+//   near-black:  -62 val
+
+$red-near-white : #F7F0F0;
+// $red-near-white : #FAEFEF;
+$red-light      : #E63946;
+$red-medium     : #A8222C;
+$red-dark       : #620A10;
+$red-near-black : #470005;
+
+// $blue-near-white: #F1FAEE;
+// $blue-light     : #A8DADC;
+// $blue-medium    : #457B9D;
+// $blue-dark      : #1D3557;
+// $blue-near-black: #001D3C;
+
+$blue-near-white: #F1F5F7;
+$blue-light     : #95CCE7;
+$blue-medium    : #3682B2;
+$blue-dark      : #16335C;
+$blue-near-black: #001D3C;
+
+/******************************************************************************
+  SECTION: APPLIED COLORS
+******************************************************************************/
+
+$body-color : $blue-near-black;
+$body-bg    : $blue-near-white;
+
+$link-color       : $blue-medium;
+$link-active-color: $red-medium;

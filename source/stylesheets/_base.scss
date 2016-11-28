@@ -1,0 +1,122 @@
+html {
+  line-height : $lineh-base;
+  font-size   : $rem-base;
+
+  @include breakpoint($bp-xs) {
+    font-size: $rem-xs;
+  }
+  @include breakpoint($bp-sm) {
+    font-size: $rem-sm;
+  }
+  @include breakpoint($bp-md) {
+    font-size: $rem-md;
+  }
+  @include breakpoint($bp-lg) {
+    font-size: $rem-lg;
+  }
+  @include breakpoint($bp-xl) {
+    font-size: $rem-xl;
+  }
+}
+
+// Set font stack per recommendation of http://purecss.io/grids/#using-grids-with-custom-fonts
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family : "Roboto", sans-serif;
+}
+
+body, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family : "Roboto", sans-serif;
+  font-size   : 1.6rem;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  color     : $body-color;
+  background: $body-bg;
+}
+
+
+/******************************************************************************
+  SECTION: GENERIC TAG STYLES
+******************************************************************************/
+
+a {
+  color           : $link-color;
+  text-decoration : underline;
+
+  &:hover, &:active {
+    color           : $link-active-color;
+    text-decoration : none;
+  }
+}
+
+a.nostyle, a.nostyle:hover {
+  color           : inherit;
+  font-size       : inherit;
+  text-decoration : inherit;
+}
+
+
+h1 {
+  font-size: 4rem;
+  margin: 2.4rem 0 2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin: 2rem 0 1.4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin: 2rem 0 0.8rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+
+/******************************************************************************
+  SECTION: SHORTCUT SINGULAR CLASSES
+******************************************************************************/
+
+// Font styles and decorationss
+.btext  { font-weight    : bold;         }
+.itext  { font-style     : italic;       }
+.uline  { text-decoration: underline;    }
+.sthru  { text-decoration: line-through; }
+
+// Alignments
+.ltext  { text-align: left !important;    }
+.rtext  { text-align: right !important;   }
+.ctext  { text-align: center !important;  }
+
+// Vertical Aligns
+.vmid     { vertical-align: middle; }
+.vtop     { vertical-align: top;    }
+.vbottom  { vertical-align: bottom; }
+
+// Font and Text
+.translucent  { opacity: 0.5; }
+.large-text   { font-size: 2rem; }
+
+// Display and Positioning
+.ilblock  { display: inline-block !important; }
+.block    { display: block !important;        }
+
+.flex-centered {
+  display         : flex;
+  height          : 100%;
+  width           : 100%;
+  align-items     : center;
+  justify-content : center;
+}
