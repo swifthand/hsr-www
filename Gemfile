@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman', '4.1.12'
+gem 'middleman', '4.1.13'
 gem 'middleman-livereload'
 
 # For faster file watcher updates on Windows:
